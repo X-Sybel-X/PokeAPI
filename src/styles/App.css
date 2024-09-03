@@ -1,0 +1,147 @@
+/* Estilos para la barra de navegación lateral */
+nav {
+  background-color: #000000;
+  /* Fondo negro */
+  padding: 20px;
+  border-radius: 15px;
+  /* Bordes suavemente redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  /* Sombra elegante */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: #ffd700;
+  /* Texto dorado */
+  font-weight: bold;
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #1c1c1c;
+  /* Fondo negro profundo */
+  border: 1px solid #ffd700;
+  /* Borde dorado */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Espaciado para un toque moderno */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7);
+  /* Sombra dorada */
+  background-color: #333333;
+  /* Cambio sutil en el fondo al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+div[style*="flex: 1"] {
+  background-color: #111111;
+  /* Fondo negro profundo */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  /* Sombra elegante */
+}
+
+/* Títulos del Pokémon */
+h2 {
+  font-size: 32px;
+  color: #ffd700;
+  /* Color dorado */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* Espaciado amplio para un toque refinado */
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ffd700;
+  /* Línea dorada debajo del título */
+  padding-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cccccc;
+  /* Texto gris claro */
+}
+
+/* Listas */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #f0f0f0;
+  /* Texto blanco suave */
+}
+
+/* Imágenes del Pokémon */
+img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #ffd700;
+  /* Borde dorado */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+  /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.8);
+  /* Sombra dorada */
+}
+
+/* Estilos para el mensaje de error */
+p[style*="error"] {
+  color: #ff4c4c;
+  /* Rojo elegante para errores */
+  font-weight: bold;
+}
+
+/* Estilos para el mensaje de carga */
+p[style*="Cargando"] {
+  font-style: italic;
+  color: #ffd700;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.app-container {
+  display: flex;
+}
+
+.content {
+  margin-left: 20px;
+  flex: 1;
+  background-color: #1a001f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}

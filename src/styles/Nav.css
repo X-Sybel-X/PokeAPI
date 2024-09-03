@@ -1,0 +1,31 @@
+.navigation {
+    width: 200px;
+    padding: 15px;
+    background: #2c002f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    margin-bottom: 15px;
+  }
+  
+  .navigation ul li a {
+    color: #e0e0e0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #7e0e9d, #430c59);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navigation ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(126, 14, 157, 0.6);
+  }
+  
